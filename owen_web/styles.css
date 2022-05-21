@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background: rgba(211, 211, 211, 0.205);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.background{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/contact_us.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    /* border: 3px solid black; */
+    height: min-content;
+    display: flex;
+    padding: 4% 6%;
+    justify-content: flex-end;
+    align-items: center;
+    /* background: rgb(12, 12, 12); */
+
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    /* border: 3px solid black; */
+    padding: 0px;
+  
+}
+.nav-links ul li{
+    /* border: 3px solid white; */
+    display: inline-block;
+    padding: 5px;
+    list-style: none;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: lightcoral;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.textbox{
+    /* border: 3px solid black; */
+    position: absolute;
+    color: #fff;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+}
+
+.textbox p{
+    /* border: 3px solid #fff; */
+   margin: 10px 0 40px;
+   font-size: 14px;
+}
+.textbox h1{
+    font-size: 62px;
+}
+
+.hero-btn{
+    display: inline-block;
+    border: 1px solid white;
+    background: transparent;
+    padding: 12px 34px;
+    position: relative;
+}
+
+.hero-btn:hover{
+    border: 1px solid coral;
+    background: coral;
+    transition: 1s;
+}
+
+/* nav .fas{
+    display: none;
+} */
+
+
+@media (max-width:500px){
+        
+     .textbox h1{
+    font-size: 22px;
+}   
+    .nav-links ul li{
+    /* border: 3px solid white; */
+    display: block;
+
+}
+      .nav-links{
+         position: absolute;
+         top: 0;
+         right: 200px;
+         background: #ff4500;
+         width: 200px;
+         height: 100vh;
+         text-align: left;
+         z-index: 1;
+         transition: 1s;
+      }
+
+    
+}
+   
+    nav.fas{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+   
+
+
+/* courses aka text */
+
+.courses{
+    /* outline: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    /* border: 2px solid black; */
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    /* border: 2px solid black; */
+ margin-top: 5%;
+ display: flex;
+ justify-content: space-between;
+}
+
+.course-col{
+    /* border: 2px solid blueviolet; */
+    flex-basis: 31%;
+     background: #fddede;
+     border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0 #777;
+    opacity: 0.8;
+}
+
+.icons{
+ 
+    text-align: center;
+ 
+}
+.fab{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.fa-facebook{
+    color: blue;
+
+}
+.fa-linkedin{
+    color: blue;
+}
+.fa-github{
+    color: coral;
+}
+.fa-twitter{
+    color: steelblue;
+}
+.fa-whatsapp{
+    color: rgb(5, 252, 169);
+    cursor: pointer;
+}
+.fa-whatsapp:hover{
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
